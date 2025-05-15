@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 4</title>
+    <link rel="stylesheet" href="style_pb4.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="table-container">
+    <h2>Tabel cu antet pe linie</h2>
+    <table class="sortable horizontal">
+        <thead>
+        <tr>
+            <th class="sortable">Name</th>
+            <th class="sortable">Season</th>
+            <th class="sortable">Color</th>
+            <th class="sortable">Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Tulip</td>
+            <td>Spring</td>
+            <td>Pink</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Rose</td>
+            <td>Summer</td>
+            <td>Red</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Orchid</td>
+            <td>Summer</td>
+            <td>Purple</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Dahlia</td>
+            <td>Autumn</td>
+            <td>White</td>
+            <td>4</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container">
+    <h2>Tabel cu antet pe coloana</h2>
+    <table id="productSpecs" class="sortable vertical">
+        <tr>
+            <th class="sortable">Name</th>
+            <td>Tulip</td>
+            <td>Rose</td>
+            <td>Orchid</td>
+            <td>Dahlia</td>
+        </tr>
+        <tr>
+            <th class="sortable">Season</th>
+            <td>Spring</td>
+            <td>Summer</td>
+            <td>Summer</td>
+            <td>Autumn</td>
+        </tr>
+        <tr>
+            <th class="sortable">Color</th>
+            <td>Pink</td>
+            <td>Red</td>
+            <td>Purple</td>
+            <td>White</td>
+        </tr>
+        <tr>
+            <th class="sortable">Price</th>
+            <td>10</td>
+            <td>8</td>
+            <td>15</td>
+            <td>4</td>
+        </tr>
+    </table>
+</div>
+
+<script src="problema_4.js"></script>
+</body>
+</html>

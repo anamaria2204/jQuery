@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style_pb3v2.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div class="game-container">
+    <h1>Memory Game</h1>
+
+    <div class="controls">
+        <label for="gridSize">Select Grid Size:</label>
+        <select id="gridSize">
+            <option value="4">4x4 (8 pairs)</option>
+            <option value="6">6x6 (18 pairs)</option>
+            <option value="8">8x8 (32 pairs)</option>
+        </select>
+
+        <button id="startButton">Start Game</button>
+    </div>
+
+    <div id="gameBoard" class="game-board"></div>
+</div>
+
+<script src="problema_3v2.js"></script>
+</body>
+</html>

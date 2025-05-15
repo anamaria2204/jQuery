@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema_1</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<select id="firstList" multiple="multiple" size="10">
+    <option value="Lily">Lily</option>
+    <option value="Orchid">Orchid</option>
+    <option value="Rose">Rose</option>
+</select>
+<select id="secondList" multiple="multiple" size="10">
+    <option value="Tulip">Tulip</option>
+    <option value="Sunflower">Sunflower</option>
+    <option value="Daisy">Daisy</option>
+</select>
+</body>
+<script>
+    $(document).ready(function(){
+       $('#firstList').on('dblclick', 'option', function(){
+           const option = $(this);
+           $('#secondList').append(option.clone());
+           option.remove();
+       });
+
+       $('#secondList').on('dblclick', 'option', function(){
+           const option = $(this);
+           $('#firstList').append(option.clone());
+           option.remove();
+       });
+    });
+</script>
+</html>
